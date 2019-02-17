@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Budget application - menage your spendings and save your money!</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/money-bag.png">
+    <script defer src="dist/bundle.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content">
+            <h1 class="heading heading--primary">Budget App</h1>
+            <p class="paragraph">
+                Aenean in facilisis tellus. Curabitur interdum vulputate ipsum et luctus. Mauris commodo velit a sapien
+                suscipit placerat. Integer eget ligula velit. Donec sed dolor quis quam interdum tempor. Quisque eget
+                massa neque. Donec mollis hendrerit quam at posuere. Suspendisse cursus ornare justo non pellentesque.
+            </p>
+            <input type="text" class="input__text" id="your-budget" placeholder="Your budget...">
+            <div class="button-container">
+                <input type="button" class="input__btn" id="confirm-budget" value="Confirm">
+                <input type="button" class="input__btn input__btn--reset" id="reset-budget" value="Reset All" disabled>
+            </div>
+        </div>
+    </header>
+
+    <mian class="main">
+        <section class="add-spending">
+            <div class="add-spending__content">
+                <h2 class="heading heading--secondary">Add to the list:</h2>
+                <label class="input__description" for="spend-name">Name:</label>
+                <input type="text" class="input__text" id="spend-name" disabled>
+                <label class="input__description" for="spend-price">Price:</label>
+                <input type="text" class="input__text" id="spend-price" disabled>
+                <label class="input__description" for="select-amount">Amount:</label>
+                <select class="input input__select" id="spend-amount" disabled>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+                <input type="button" class="input__btn u-center" id="add-to-budget" value="Add" disabled>
+            </div>
+        </section>
+        <section class="list-of-spending">
+            <div class="list-of-spending__content">
+                <h2 class="heading heading--secondary">List of spendings:</h2>
+                <div class="list-of-spending__container">
+                    <table class="list-of-spending__spendings-table" id="spendings-table">
+                        <tr>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Amount</th>
+                            <th>Remove</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section class="summary-spending">
+            <div class="summary-spending__content">
+                <h3 class="heading heading--third">
+                    Budget: <span class="summary-spending__amount" id="choosen-of-budget"></span>
+                    </h2>
+                    <h3 class="heading heading--third">
+                        Left: <span class="summary-spending__amount" id="rest-of-budget"></span>
+                        </h2>
+            </div>
+        </section>
+    </mian>
+
+    <footer class="app-footer">
+        <div class="app-footer__content">
+            <p class="app-footer__paragraph">© All Rights Reserved.</p>
+            <p class="app-footer__paragraph">Patryk Białek</p>
+        </div>
+    </footer>
+</body>
+
+</html>
