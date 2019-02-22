@@ -1,6 +1,4 @@
-import {
-	Budget
-} from "./budget.js";
+import { Budget } from "./budget.js";
 import {
 	storage,
 	html,
@@ -254,8 +252,4 @@ class HTML {
 	}
 }
 
-export {
-	Storage,
-	HTML,
-	budget
-};
+export { Storage, HTML, budget };
