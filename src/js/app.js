@@ -1,10 +1,5 @@
-import {
-	Storage,
-	budget
-} from "./core.js";
-import {
-	HTML
-} from "./core.js";
+import { Storage, budget } from "./core.js";
+import { HTML } from "./core.js";
 
 const html = new HTML();
 const storage = new Storage();
