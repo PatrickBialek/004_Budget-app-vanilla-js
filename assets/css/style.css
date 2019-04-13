@@ -194,7 +194,7 @@ input {
 }
 
 .input__btn {
-	background: #f35f55;
+	background-color: #f35f55;
 	border: 2px solid #f35f55;
 	padding: 16px 34px;
 	color: #fff;
@@ -203,7 +203,7 @@ input {
 	font-weight: 400;
 	border-radius: 4px;
 	cursor: pointer;
-	transition: all 0.35s;
+	transition: background-color 0.35s;
 }
 
 .input__btn--reset {
@@ -215,7 +215,7 @@ input {
 }
 
 .input__btn:hover:enabled {
-	background: #fd4437;
+	background-color: #fd4437;
 }
 
 .input__btn:hover:disabled {
